@@ -478,6 +478,8 @@ Test("[RC]->[C]",function()
     if old(game,x) ~= zy then
         return 0, "Old function was incorrect - Did not return the specific instance?"
     end
+
+	zy:Destroy()
     
     if Restore then
         Restore(C.ToHookRC)
@@ -743,3 +745,4 @@ print("Credits: ")
 print("\t Shadow(Discord: shadow6698)")
 print("\t Arman(Discord: armandukx)")
 print("----------------------------------------------")
+
